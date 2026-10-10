@@ -7,7 +7,7 @@ Alhamdulillah Program ini berhasil saya selesaikan, mungkin masih jauh dari kata
 Saya sedang berusaha untuk menambahkan beberap math pada cryptography untuk saya jadikan program, dan mungkin kedepannya saya akan berusaha untuk membuat kode yang saya ketik menjadi lebih rapih.
 
 # Cara Penggunaan
-Untuk Penggunaan -> Euclid(a, b) 
+Untuk Penggunaan -> Euclid(a, b) atau EuclidDiperluas(a, b)
 
-Contoh: Euclid(1071, 462)
+Contoh: EuclidDiperluas(1071, 462)
 `Hasil = 21`, dengan `index = 3` | `r = 21` | `q = 7` | `s = -3` | `t = 7` -> selanjutnya r = 0 maka program di hentikan.
