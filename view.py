@@ -16,7 +16,7 @@ def result_euclid(euc: logic.Euclid):
     print(f"{langkah_iterasi:^10} | {judul_a:<10} | {judul_b:<10} | {sisa:<10}")
     print(50*"-")
     for i in range(len(langkah_r)):
-        print(f"{i+1:^10} | {langkah_a[i]:^10} | {langkah_b[i]:^10} | {langkah_r[i]:^10}")
+        print(f"{i+1:^10} | {langkah_a[i]:^10} | {langkah_b[i]:^10} | {langkah_a[i] % langkah_b[i]:^10}")
     print(50*"-")
     print(f"Hasil Euclid: {euc.hasil}")
 
@@ -41,3 +41,27 @@ def result_euclid_diperluas(euc: logic.EuclidDiperluas):
         print(f"{i+1:^10} | {langkah_r[i]:<10} | {langkah_q[i]:<10} | {langkah_s[i]:<10} | {langkah_t[i]:<10}")
     print(70*"-")
     print(f"Hasil Euclid Diperluas: {euc.hasil}")
+
+def result_invers_modular(mod: logic.ModularInvers):
+    langkah_r = mod.res_r
+    langkah_q = mod.res_q
+    langkah_s = mod.res_s
+    langkah_t = mod.res_t
+    judul_r = "LANGKAH R"
+    judul_q = "LANGKAH Q"
+    judul_s = "LANGKAH S"
+    judul_t = "LANGKAH T"
+    judul_iterasi = "INDEX"
+    nama_operasi = "MODULAR INVERS"
+    os.system("cls")
+    print(f"{nama_operasi:^65}")
+    print(70*"-")
+    print(f"{judul_iterasi:^10} | {judul_r:^10} | {judul_q:^10} | {judul_s:^10} | {judul_t:^10}")
+    print(70*"-")
+    for i in range(len(langkah_q)):
+        print(f"{i+1:^10} | {langkah_r[i]:<10} | {langkah_q[i]:<10} | {langkah_s[i]:<10} | {langkah_t[i]:<10}")
+    print(70*"-")
+    if mod.hasil == 1:
+        print(f"Hasil Invers Modular: {mod.hasil}")
+    else:
+        print(f"Euclid Tidak Memiliki Invers")
